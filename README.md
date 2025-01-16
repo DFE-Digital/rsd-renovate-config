@@ -1,0 +1,1 @@
+Renovate shared config repository
