@@ -30,4 +30,10 @@
   "major": {
     "addLabels": ["major"]
   }
+  "nuget": {
+    "token": "${{ secrets.RENOVATE_NUGET_TOKEN }}",
+    "registryUrls": [
+      "https://nuget.pkg.github.com/DFE-Digital/index.json"
+    ]
+  }
 }
