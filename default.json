@@ -33,7 +33,8 @@
   "nuget": {
     "token": "${{ secrets.RENOVATE_NUGET_TOKEN }}",
     "registryUrls": [
-      "https://nuget.pkg.github.com/DFE-Digital/index.json"
+      "https://api.nuget.org/v3/index.json", // The default NuGet.org feed
+      "https://nuget.pkg.github.com/DFE-Digital/index.json" // DFE GitHub Packages feed
     ]
   }
 }
