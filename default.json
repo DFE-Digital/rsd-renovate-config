@@ -20,7 +20,8 @@
       "allowedVersions": "<=7.0.0"
     },
     {
-      "matchPackageNames": ["DfE.CoreLibs.*"],
+      "matchDepTypes": ["dependencies", "devDependencies"],
+      "matchPackageNames": ["DfE.CoreLibs.Testing"],
       "nuget": {
         "token": "${{secrets.RENOVATE_NUGET_TOKEN}}",
         "registryUrls": [
