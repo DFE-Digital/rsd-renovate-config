@@ -18,6 +18,15 @@
     {
       "matchPackageNames": [ "FluentAssertions" ],
       "allowedVersions": "<=7.0.0"
+    },
+    {
+      "matchPackageNames": ["DfE.CoreLibs.*"],
+      "nuget": {
+        "token": "${{secrets.RENOVATE_NUGET_TOKEN}}",
+        "registryUrls": [
+          "https://nuget.pkg.github.com/DFE-Digital/index.json"
+        ]
+      }
     }
   ],
   "timezone": "Europe/London",
@@ -29,12 +38,5 @@
   },
   "major": {
     "addLabels": ["major"]
-  }
-  "nuget": {
-    "token": "${{ secrets.RENOVATE_NUGET_TOKEN }}",
-    "registryUrls": [
-      "https://api.nuget.org/v3/index.json",
-      "https://nuget.pkg.github.com/DFE-Digital/index.json" 
-    ]
   }
 }
