@@ -20,6 +20,14 @@
       "allowedVersions": "<=7.0.0"
     }
   ],
+  "hostRules": [
+    {
+      "matchHost": "nuget.pkg.github.com",
+      "nuget": {
+        "token": "${{ secrets.repository.RENOVATE_NUGET_TOKEN }}"
+      }
+    }
+  ],
   "timezone": "Europe/London",
   "minimumReleaseAge": "7 days",
   "automergeSchedule": ["after 10am every weekday", "before 4pm every weekday"],
